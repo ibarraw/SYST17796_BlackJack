@@ -11,9 +11,9 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
- * @author William Ibarra
+ * @author Xianjun
  */
-public class Player {
+public abstract class Player {
 
     private String name; //the unique name for this player
 
