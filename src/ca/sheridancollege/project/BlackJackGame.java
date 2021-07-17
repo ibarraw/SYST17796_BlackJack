@@ -9,7 +9,7 @@ package ca.sheridancollege.project;
 /**
  * This class +++Insert Description Here+++
  *
- * @author WXJ
+ * @author Xianjun Wang July 2021
  */
 public class BlackJackGame {
     
