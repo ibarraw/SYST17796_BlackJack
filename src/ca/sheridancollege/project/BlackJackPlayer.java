@@ -11,6 +11,15 @@ package ca.sheridancollege.project;
  *
  * @author Xianjun Wang July 2021
  */
-public class BlackJackPlayer {
+public class BlackJackPlayer extends Player{
+
+    public BlackJackPlayer(String name) {
+        super(name);
+    }
+
+    @Override
+    public void play() {
+        
+    }
 
 }
