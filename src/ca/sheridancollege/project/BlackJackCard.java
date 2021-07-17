@@ -22,6 +22,7 @@ public class BlackJackCard extends Card{
         super(suit,value);
     }
      
+    @Override
      public String toString(){
          return getValue() + " "  + getSuit();
      }
