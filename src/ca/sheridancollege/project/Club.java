@@ -4,6 +4,7 @@ package ca.sheridancollege.project;
  * equivalent of suit and value.
  *
  * @author William Ibarra June 2021
+ * 
  */
 public class Club extends Card {
 
