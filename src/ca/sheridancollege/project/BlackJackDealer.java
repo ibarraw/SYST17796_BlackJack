@@ -6,6 +6,8 @@
 
 package ca.sheridancollege.project;
 
+import ca.sheridancollege.project.GameBaseCode.Player;
+
 /**
  * This class is used to hold Black Jack Card game dealer
  *

@@ -6,6 +6,8 @@
 
 package ca.sheridancollege.project;
 
+import ca.sheridancollege.project.GameBaseCode.Card;
+
 /**
  * This class This class is used to models BlackJack card Objects. 
  * 

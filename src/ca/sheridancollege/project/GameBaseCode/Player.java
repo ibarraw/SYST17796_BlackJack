@@ -3,7 +3,9 @@
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
  */
-package ca.sheridancollege.project;
+package ca.sheridancollege.project.GameBaseCode;
+
+import ca.sheridancollege.project.*;
 
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.

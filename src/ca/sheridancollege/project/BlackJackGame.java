@@ -6,31 +6,27 @@
 
 package ca.sheridancollege.project;
 
+import ca.sheridancollege.project.GameBaseCode.Game;
+
 /**
  * This class +++Insert Description Here+++
  *
  * @author Xianjun Wang July 2021
  */
-public class BlackJackGame {
-    
-    public static void main(String[] args) {
-       
-        BlackJackCard[] cardGroup = GroupOfCards.generateBlackJackCard(52);
-        
-        for (int i=0; i<52; ++i){
-            System.out.println(i);
-            System.out.println(cardGroup[i]);
-        }
-        
-        System.out.println("*****************************************************");
-        GroupOfCards.shuffle();
-        
-         for (int i=0; i<52; ++i){
-      
-            System.out.println(52-i);
-            System.out.println(cardGroup[i]);
-        }
-        
+public class BlackJackGame extends Game{
+
+    public BlackJackGame(String name) {
+        super(name);
+    }
+
+    @Override
+    public void play() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void declareWinner() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
