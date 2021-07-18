@@ -7,7 +7,6 @@ package ca.sheridancollege.project.GameBaseCode;
 
 import ca.sheridancollege.project.BlackJackCards.Value;
 import ca.sheridancollege.project.BlackJackCards.Suit;
-import ca.sheridancollege.project.*;
 
 /**
  * A class to be used as the base Card class for the project. Must be general
@@ -51,10 +50,6 @@ public abstract class Card { //default modifier for child classes
      * @return a String representation of a card. Could be an UNO card, a
      * regular playing card etc.
      */
-    
-//     public String toString(){
-//         return value + " "  + suit;
-//     }
     
     public abstract String toString ();
 }

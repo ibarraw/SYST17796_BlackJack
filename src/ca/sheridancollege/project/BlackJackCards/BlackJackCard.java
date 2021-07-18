@@ -6,13 +6,12 @@
 
 package ca.sheridancollege.project.BlackJackCards;
 
-import ca.sheridancollege.project.BlackJackCards.Suit;
 import ca.sheridancollege.project.GameBaseCode.Card;
 
 /**
  * This class This class is used to models BlackJack card Objects. 
  * 
- * A BlackJack card has a value among:ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, 
+ * A BlackJack card has a value among: ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, 
  * NINE, TEN, JACK, QUEEN, KING
  * and it has a suit among:  CLUB, SPADE, DIAMOND, HEART
  * 

@@ -6,34 +6,16 @@
 
 package ca.sheridancollege.project;
 
-import ca.sheridancollege.project.BlackJackCards.BlackJackCard;
-import ca.sheridancollege.project.BlackJackCards.BlackJackDeck;
-import ca.sheridancollege.project.GameBaseCode.GroupOfCards;
+import ca.sheridancollege.project.BlackJackCards.CardsGroup;
 
 /**
  * This class +++Insert Description Here+++
  *
- * @author WXJ
+ * @author Xianjun Wang July 2021
  */
 public class PlayBlackJack {
      public static void main(String[] args) {
-       
-        BlackJackCard[] deck = BlackJackDeck.generateBlackJackCard(52);
-        
-        for (int i=0; i<52; ++i){
-            System.out.println(i);
-            System.out.println(deck[i]);
-        }
-        
-        System.out.println("*****************************************************");
-        BlackJackDeck.shuffle();
-        
-         for (int i=0; i<52; ++i){
-      
-            System.out.println(52-i);
-            System.out.println(deck[i]);
-        }
-        
+        CardsGroup carddeck = new CardsGroup(25);
+        carddeck.printDeck();    
     }
-
 }

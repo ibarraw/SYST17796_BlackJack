@@ -13,9 +13,9 @@ import ca.sheridancollege.project.GameBaseCode.Player;
  *
  * @author Xianjun Wang July 2021
  */
-public class BlackJackDealer extends Player{
+public class Dealer extends Player{
 
-    public BlackJackDealer(String name) {
+    public Dealer(String name) {
         super(name);
     }
 
