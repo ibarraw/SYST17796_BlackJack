@@ -7,6 +7,7 @@
 package ca.sheridancollege.project;
 
 import ca.sheridancollege.project.BlackJackCards.BlackJackCard;
+import ca.sheridancollege.project.BlackJackCards.BlackJackDeck;
 import ca.sheridancollege.project.GameBaseCode.GroupOfCards;
 
 /**
@@ -17,7 +18,7 @@ import ca.sheridancollege.project.GameBaseCode.GroupOfCards;
 public class PlayBlackJack {
      public static void main(String[] args) {
        
-        BlackJackCard[] deck = GroupOfCards.generateBlackJackCard(52);
+        BlackJackCard[] deck = BlackJackDeck.generateBlackJackCard(52);
         
         for (int i=0; i<52; ++i){
             System.out.println(i);
@@ -25,7 +26,7 @@ public class PlayBlackJack {
         }
         
         System.out.println("*****************************************************");
-        GroupOfCards.shuffle();
+        BlackJackDeck.shuffle();
         
          for (int i=0; i<52; ++i){
       

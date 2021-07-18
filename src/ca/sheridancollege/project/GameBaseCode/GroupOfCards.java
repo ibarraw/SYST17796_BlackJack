@@ -5,13 +5,8 @@
  */
 package ca.sheridancollege.project.GameBaseCode;
 
-import ca.sheridancollege.project.BlackJackCards.Value;
-import ca.sheridancollege.project.BlackJackCards.BlackJackCard;
-import ca.sheridancollege.project.BlackJackCards.Suit;
-import ca.sheridancollege.project.*;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 
 /**
  * A concrete class that represents any grouping of cards for a Game. HINT, you might want to subclass this more than
@@ -19,66 +14,11 @@ import java.util.Random;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
- * @modifier Xianjun Wang June 2021
  */
 public class GroupOfCards {
-    
-    private static BlackJackCard[] cards;
-    private int cardsIndex;
-
-    //Create an array to hold 52 BlackJack cards.
-    public static BlackJackCard[] generateBlackJackCard(int numOfCards) {
-
-        cards = new BlackJackCard[numOfCards];
-        int cardsIndex = 0;
-
-        Suit[] suits = Suit.values();
-
-        for (int i = 0; i < suits.length; i++) {
-             //assign suits/colors to cards
-            Suit suit = suits[i];
-
-            for (int j = 0; j < Value.values().length ; j++) {
-                cards[cardsIndex] = new BlackJackCard(suit, Value.values()[j]);
-                ++cardsIndex;    
-            }
-        }
-   
-        return cards;
-    }
-    
-    //shuffle the 52 cards in the array to make a random order
-    
-    public static BlackJackCard[] shuffle() {
-        
-        int len = cards.length; 
-        Random random = new Random();
-        
-        for (int i = 0; i < cards.length; i++) {  
-            int randomValue = i + random.nextInt(len - i);
-            BlackJackCard temp = cards[randomValue];
-            cards[randomValue] = cards[i];
-            cards[i] = temp;
-        }
-        return cards;
-    }
-    
-    //check if all cards in the cards array were used
-
-    public boolean isEmpty() {
-        return cardsIndex == 0;
-    }
-
-    //return a singular Uno card
-    public BlackJackCard drawCard() throws IllegalArgumentException {
-        if (isEmpty()) {
-            throw new IllegalArgumentException("Cannot draw a card since all cards were used");
-        }
-        return cards[--cardsIndex];
-    }
-
+ 
     //The group of cards, stored in an ArrayList
-//    private ArrayList<Card> cards;
+    private ArrayList<Card> cards;
     private int size;//the size of the grouping
 
     public GroupOfCards(int size) {
@@ -90,9 +30,9 @@ public class GroupOfCards {
      *
      * @return the group of cards.
      */
-//    public ArrayList<Card> getCards() {
-//        return cards;
-//    }
+    public ArrayList<Card> getCards() {
+        return cards;
+    }
 
 //    public void shuffle() {
 //       Collections.shuffle(cards);
