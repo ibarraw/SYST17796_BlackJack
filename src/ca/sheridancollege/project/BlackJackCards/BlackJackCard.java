@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package ca.sheridancollege.project;
+package ca.sheridancollege.project.BlackJackCards;
 
+import ca.sheridancollege.project.BlackJackCards.Suit;
 import ca.sheridancollege.project.GameBaseCode.Card;
 
 /**

@@ -5,6 +5,9 @@
  */
 package ca.sheridancollege.project.GameBaseCode;
 
+import ca.sheridancollege.project.BlackJackCards.Value;
+import ca.sheridancollege.project.BlackJackCards.BlackJackCard;
+import ca.sheridancollege.project.BlackJackCards.Suit;
 import ca.sheridancollege.project.*;
 import java.util.ArrayList;
 import java.util.Collections;

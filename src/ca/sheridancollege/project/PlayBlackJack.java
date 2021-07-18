@@ -6,6 +6,7 @@
 
 package ca.sheridancollege.project;
 
+import ca.sheridancollege.project.BlackJackCards.BlackJackCard;
 import ca.sheridancollege.project.GameBaseCode.GroupOfCards;
 
 /**

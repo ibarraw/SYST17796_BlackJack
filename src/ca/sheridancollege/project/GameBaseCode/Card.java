@@ -5,6 +5,8 @@
  */
 package ca.sheridancollege.project.GameBaseCode;
 
+import ca.sheridancollege.project.BlackJackCards.Value;
+import ca.sheridancollege.project.BlackJackCards.Suit;
 import ca.sheridancollege.project.*;
 
 /**

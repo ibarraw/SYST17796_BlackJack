@@ -1,4 +1,4 @@
-package ca.sheridancollege.project;
+package ca.sheridancollege.project.BlackJackCards;
 
 /**
  * An enum for Card values
