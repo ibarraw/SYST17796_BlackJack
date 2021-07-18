@@ -10,9 +10,9 @@ import ca.sheridancollege.project.GameBaseCode.GroupOfCards;
 import java.util.Random;
 
 /**
- * This class +++Insert Description Here+++
+ * This class used to create Black Jack deck.
  *
- * @author WXJ
+ * @author Xianjun Wang
  */
 public class BlackJackDeck extends GroupOfCards{
 
