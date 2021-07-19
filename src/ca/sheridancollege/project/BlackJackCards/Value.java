@@ -1,8 +1,5 @@
 package ca.sheridancollege.project.BlackJackCards;
 
-import ca.sheridancollege.project.*;
-import ca.sheridancollege.project.BlackJackCards.*;
-
 /**
  * An enum for Card values
  *

@@ -1,8 +1,5 @@
 package ca.sheridancollege.project.BlackJackCards;
 
-import ca.sheridancollege.project.*;
-import ca.sheridancollege.project.BlackJackCards.*;
-
 /**
  * An enum for Card suits
  *
@@ -10,5 +7,4 @@ import ca.sheridancollege.project.BlackJackCards.*;
  */
 public enum Suit {
     CLUB, SPADE, DIAMOND, HEART
-
 }

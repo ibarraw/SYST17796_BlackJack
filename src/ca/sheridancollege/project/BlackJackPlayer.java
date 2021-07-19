@@ -9,12 +9,13 @@ package ca.sheridancollege.project;
 import ca.sheridancollege.project.GameBaseCode.Player;
 
 /**
- * This class used to hold Black Jack Card game
+ * This class is used to hold Black Jack Card game players.
  *
  * @author Xianjun Wang July 2021
  */
 public class BlackJackPlayer extends Player{
-
+    
+    //Player constructor for the players and the dealer
     public BlackJackPlayer(String name) {
         super(name);
     }
@@ -23,5 +24,4 @@ public class BlackJackPlayer extends Player{
     public void play() {
         
     }
-
 }

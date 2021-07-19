@@ -5,8 +5,6 @@
  */
 package ca.sheridancollege.project.GameBaseCode;
 
-import ca.sheridancollege.project.*;
-
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
  *

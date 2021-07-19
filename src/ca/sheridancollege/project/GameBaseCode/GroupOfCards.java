@@ -5,11 +5,8 @@
  */
 package ca.sheridancollege.project.GameBaseCode;
 
-import ca.sheridancollege.project.BlackJackCards.BlackJackCard;
-import ca.sheridancollege.project.BlackJackCards.Suit;
-import ca.sheridancollege.project.BlackJackCards.Value;
 import java.util.ArrayList;
-import static java.util.Collections.shuffle;
+import java.util.Collections;
 
 /**
  * A concrete class that represents any grouping of cards for a Game. HINT, you might want to subclass this more than
@@ -20,42 +17,14 @@ import static java.util.Collections.shuffle;
  * @modifier Xianjun Wang July 2021
  */
 public class GroupOfCards {
- 
+    
     //The group of cards, stored in an ArrayList
-    private ArrayList<Card> cards;
-    protected int size;//the size of the grouping
+    protected ArrayList<Card> cards;
     
-
-    public GroupOfCards(int size) {
-        this.size = size;
-        deck(size);      
+    public GroupOfCards() {
+        cards = new ArrayList<Card>();
     }
-    
-    public ArrayList<Card> deck(int size){
-        cards = new ArrayList<>();
-        ArrayList<Card> temps = new ArrayList<>();
-        
-        for(int i = 0; i<Suit.values().length; i++){
-            for (int x = 0; x<Value.values().length; x++){
-                temps.add(new BlackJackCard(Suit.values()[i], Value.values()[x]));
-            }    
-        }
-        shuffle(temps);
-
-        for(int i = 0; i < size; i++){         
-             cards.add(i,temps.get(i));          
-        }
-         return cards;      
-    }
-    
-    public void printDeck() {
-        int index = 0;
-        for (Card c : cards) {
-            System.out.println(index + " "+c);
-            index++;
-        }
-    }
-
+   
     /**
      * A method that will get the group of cards as an ArrayList
      *
@@ -65,22 +34,38 @@ public class GroupOfCards {
         return cards;
     }
 
-//    public void shuffle() {
-//       Collections.shuffle(cards);
-//    }
+    public void addCard(Card c) {
+        cards.add(c);
+    }
+    
+    public void shuffle() {
+        Collections.shuffle(cards);
+    }
 
+    public void printDeck() {
+        int index = 0;
+        for (Card c : cards) {
+            System.out.println(index + " "+c);
+            index++;
+        }      
+    }
+    
     /**
      * @return the size of the group of cards
      */
     public int getSize() {
-        return size;
+        return cards.size();
     }
-
+    
     /**
      * @param size the max size for the group of cards
      */
-    public void setSize(int size) {
-        this.size = size;
-    }
+//    public void setSize(int size) {
+//        this.size = size;
+//    }
     
+    private void sort(ArrayList<Card> cards) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }//end class
