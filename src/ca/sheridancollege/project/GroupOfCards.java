@@ -22,7 +22,7 @@ public class GroupOfCards {
     protected ArrayList<Card> cards;
     
     public GroupOfCards() {
-        cards = new ArrayList<Card>();
+        cards = new ArrayList<>();
     }
    
     /**
@@ -63,9 +63,5 @@ public class GroupOfCards {
 //    public void setSize(int size) {
 //        this.size = size;
 //    }
-    
-    private void sort(ArrayList<Card> cards) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
 }//end class
