@@ -14,15 +14,18 @@ package ca.sheridancollege.project;
  * @author dancye
  * @author William Ibarra
  * @modifier Xianjun Wang  July 2021
+ * @modifier Chun Kiu So July 2021
  */
 public abstract class Card { //default modifier for child classes
 
     protected Suit suit;
     protected Value value;
+    protected boolean isUp;
 
-    public Card (Suit suit, Value value) {
+    public Card (Suit suit, Value value, boolean isUp) {
         this.suit = suit;
         this.value = value;
+        this.isUp = isUp;
     }
     
     public Suit getSuit () {

@@ -10,14 +10,17 @@ package ca.sheridancollege.project;
  * game.
  *
  * @author Xianjun Wang July 2021
+ * @modifier Chun Kiu So July 2021
  */
 public class PlayBlackJack {
 
     public static void main(String[] args) {
         //Bulid a deck of 52 cards and print it out
-        System.out.println("52 Cards in the deck when the game starts:");
         Deck cardDeck = new Deck();
+        System.out.println(cardDeck.getSize() + " Cards in the deck when the game starts:");
+        
         cardDeck.printDeck();
+
 
         //DealerHand and playerhand hold cards for the dealer and the player
         GroupOfCards dealerHand = new GroupOfCards();
@@ -28,7 +31,7 @@ public class PlayBlackJack {
         cardDeck.deal(2, playerHand);
         
         //Cards left in the deck
-         System.out.println("\nCards left in the deck after dealing:");
+         System.out.println(cardDeck.getSize() + " Cards left in the deck after dealing:");
         cardDeck.printDeck();
         
         //Cards in dealerHand and playerHand

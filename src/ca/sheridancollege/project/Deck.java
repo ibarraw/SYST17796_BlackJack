@@ -10,20 +10,23 @@ package ca.sheridancollege.project;
  * This class is used to create Black Jack deck.
  *
  * @author Xianjun Wang July 2021
+ * @modifier Chun Kiu So July 2021
  */
 public class Deck extends GroupOfCards{
 
     //Bulid a BlackJack Card deck
     public Deck() {
-        for(int i = 0; i<Suit.values().length; i++){
-            for (int x = 0; x<Value.values().length; x++){
-                cards.add(new BlackJackCard(Suit.values()[i], Value.values()[x]));
-            }    
+        for(Suit suit: Suit.values()){
+            for(Value value: Value.values()){
+                BlackJackCard card = new BlackJackCard(suit, value, true);               
+                cards.add(card);
+            }
         }
         //Shuffle the deck
         shuffle();
     }
-  
+
+    
     //Deal cards to the dealer or the players. The number of cards dealed will be depend 
     //on the situaiton including starting the game, hit, stay.
     public void deal(int howMany, GroupOfCards hand){
