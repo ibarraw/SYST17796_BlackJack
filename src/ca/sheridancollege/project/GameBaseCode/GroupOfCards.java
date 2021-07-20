@@ -45,8 +45,8 @@ public class GroupOfCards {
     public void printDeck() {
         int index = 0;
         for (Card c : cards) {
-            System.out.println(index + " "+c);
             index++;
+            System.out.println(index + "  "+c);    
         }      
     }
     
