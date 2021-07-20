@@ -14,7 +14,8 @@ package ca.sheridancollege.project;
 public class Deck extends GroupOfCards {
 
     //Bulid a BlackJack Card deck
-    public Deck () {
+    public Deck (String name) {
+        super(name);
         for (int i = 0; i < Suit.values().length; i++) {
             for (int x = 0; x < Value.values().length; x++) {
                 cards.add(new BlackJackCard(Suit.values()[i], Value.values()[x]));
@@ -23,6 +24,7 @@ public class Deck extends GroupOfCards {
         //Shuffle the deck
         shuffle();
     }
+
 
 
     //Deal cards to the dealer or the players. The number of cards dealed will be depend 

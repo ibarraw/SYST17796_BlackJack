@@ -23,9 +23,12 @@ public class GroupOfCards {
 
     //The group of cards, stored in an ArrayList
     protected ArrayList<Card> cards;
+    protected String name;
 
-    public GroupOfCards () {
+    public GroupOfCards (String name) {
         cards = new ArrayList<>();
+        this.name = name;
+
     }
 
     /**
@@ -59,6 +62,15 @@ public class GroupOfCards {
     public int getSize () {
         return cards.size();
     }
+
+    public String getName () {
+        return name;
+    }
+
+    public void setName (String name) {
+        this.name = name;
+    }
+
 
     /**
      * @param size the max size for the group of cards

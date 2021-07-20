@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ca.sheridancollege.project;
-
+import java.util.Scanner;
 /**
  * This class is used to hold the BlackJack Card Game
  *
@@ -18,13 +18,48 @@ public class BlackJackGame extends Game {
 
     //Method for playing BlackJack Card game
     @Override
-    public void play () {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void play (GroupOfCards dealer, GroupOfCards player, Deck deck) {
+        Deck cardDeck = new Deck(deck.getName());
+        Scanner input = new Scanner(System.in);
+        if (cardDeck.checkHandValue(dealer) == 21) {
+            declareWinner(dealer);
+        }
+        else if (cardDeck.checkHandValue(player) == 21) {
+            declareWinner(player);
+        }
+        while (cardDeck.checkHandValue(player) < 21) {
+            System.out.println("\nWould you like to 'hit' or 'stay'?");
+            String choice = (input.nextLine());
+            if (choice.equalsIgnoreCase("hit")) {
+                cardDeck.deal(1, player);
+                System.out.println("New hand value: " + cardDeck.checkHandValue(player));
+                if (cardDeck.checkHandValue(player) > 21) {
+                    declareWinner(dealer);
+                    break;
+                }
+                else if (cardDeck.checkHandValue(player) > cardDeck.checkHandValue(dealer)) {
+                    declareWinner(player);
+                    break;
+                }
+            }
+            else if (choice.equalsIgnoreCase("stay")) {
+                if (cardDeck.checkHandValue(player) > 21) {
+                    declareWinner(dealer);
+                    break;
+                }
+                else if (cardDeck.checkHandValue(player) > cardDeck.checkHandValue(dealer)) {
+                    declareWinner(player);
+                    break;
+                }
+            }
+
+        }
     }
 
-    ////Method for declaring BlackJack Card game result
     @Override
-    public void declareWinner () {
+    public void declareWinner (GroupOfCards person) {
+
+        System.out.println("\nThe " + person.getName() + " has won the game!");
 
     }
 }
