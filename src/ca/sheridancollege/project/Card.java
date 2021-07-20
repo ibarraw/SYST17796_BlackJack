@@ -13,6 +13,7 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author William Ibarra
+ * @modifier Xianjun Wang July 2021
  */
 public abstract class Card { //default modifier for child classes
 
@@ -22,10 +23,6 @@ public abstract class Card { //default modifier for child classes
     public Card (Suit suit, Value value) {
         this.suit = suit;
         this.value = value;
-    }
-
-    public Card () {
-
     }
 
     public Suit getSuit () {
@@ -50,8 +47,6 @@ public abstract class Card { //default modifier for child classes
      * @return a String representation of a card. Could be an UNO card, a
      * regular playing card etc.
      */
+
     public abstract String toString ();
-
-
-
 }

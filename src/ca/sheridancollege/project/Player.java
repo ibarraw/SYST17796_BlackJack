@@ -13,7 +13,7 @@ package ca.sheridancollege.project;
  * @author Paul Bonenfant Jan 2020
  * @author William Ibarra
  */
-public class Player {
+public abstract class Player {
 
     private String name; //the unique name for this player
 
@@ -48,6 +48,6 @@ public class Player {
      * specific type of Player and filled in
      * with logic to play your game.
      */
-    //public abstract void play();
+    public abstract void play ();
 
 }
