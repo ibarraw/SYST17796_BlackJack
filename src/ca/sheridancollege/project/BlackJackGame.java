@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author Xianjun Wang July 2021
  */
 public class BlackJackGame extends Game {
-
+    
     public BlackJackGame (String name) {
         super(name);
     }
@@ -33,6 +33,7 @@ public class BlackJackGame extends Game {
             if (choice.equalsIgnoreCase("hit")) {
                 cardDeck.deal(1, player);
                 System.out.println("New hand value: " + cardDeck.checkHandValue(player));
+                System.out.println("Dealer hand value: " + cardDeck.checkHandValue(dealer));
                 if (cardDeck.checkHandValue(player) > 21) {
                     declareWinner(dealer);
                     break;
@@ -52,14 +53,14 @@ public class BlackJackGame extends Game {
                     break;
                 }
             }
-
+            
         }
     }
-
+    
     @Override
     public void declareWinner (GroupOfCards person) {
-
+        
         System.out.println("\nThe " + person.getName() + " has won the game!");
-
+        
     }
 }
