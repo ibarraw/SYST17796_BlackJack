@@ -14,8 +14,7 @@ package ca.sheridancollege.project;
 public class Deck extends GroupOfCards {
 
     //Bulid a BlackJack Card deck
-    public Deck (String name) {
-        super(name);
+    public Deck () {
         for (int i = 0; i < Suit.values().length; i++) {
             for (int x = 0; x < Value.values().length; x++) {
                 cards.add(new BlackJackCard(Suit.values()[i], Value.values()[x]));

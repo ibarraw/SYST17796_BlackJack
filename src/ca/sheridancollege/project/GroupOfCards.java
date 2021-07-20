@@ -25,9 +25,8 @@ public class GroupOfCards {
     protected ArrayList<Card> cards;
     protected String name;
 
-    public GroupOfCards (String name) {
+    public GroupOfCards () {
         cards = new ArrayList<>();
-        this.name = name;
 
     }
 

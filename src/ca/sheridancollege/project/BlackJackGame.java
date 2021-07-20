@@ -20,7 +20,7 @@ public class BlackJackGame extends Game {
     //Method for playing BlackJack Card game
     @Override
     public void play (GroupOfCards dealer, GroupOfCards player, Deck deck) {
-        Deck cardDeck = new Deck(deck.getName());
+        Deck cardDeck = new Deck();
         Scanner input = new Scanner(System.in);
         if (cardDeck.checkHandValue(dealer) == 21) {
             declareWinner(dealer);

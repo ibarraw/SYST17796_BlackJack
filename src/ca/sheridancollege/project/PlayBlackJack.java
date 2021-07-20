@@ -13,12 +13,14 @@ public class PlayBlackJack {
 
         //Build a deck of 52 cards and print it out
         System.out.println("52 Cards in the deck when the game starts:");
-        Deck cardDeck = new Deck("Blackjack");
+        Deck cardDeck = new Deck();
         cardDeck.printDeck();
 
         //DealerHand and playerHand hold cards for the dealer and the player
-        GroupOfCards dealerHand = new GroupOfCards("Casino dealer");
-        GroupOfCards playerHand = new GroupOfCards("Casino player");
+        GroupOfCards dealerHand = new GroupOfCards();
+        GroupOfCards playerHand = new GroupOfCards();
+        dealerHand.setName("Casino dealer");
+        playerHand.setName("Casino player");
 
         //Deal two cards to the dealer and two cards to the player when start the game.
         cardDeck.deal(2, dealerHand);
