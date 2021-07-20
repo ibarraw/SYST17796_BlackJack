@@ -9,9 +9,10 @@ import java.util.Scanner;
  * This class is used to hold the BlackJack Card Game
  *
  * @author Xianjun Wang July 2021
+ * @modifier William Ibarra July 2021
  */
 public class BlackJackGame extends Game {
-    
+
     public BlackJackGame (String name) {
         super(name);
     }
@@ -53,14 +54,13 @@ public class BlackJackGame extends Game {
                     break;
                 }
             }
-            
         }
     }
-    
+
     @Override
     public void declareWinner (GroupOfCards person) {
-        
+
         System.out.println("\nThe " + person.getName() + " has won the game!");
-        
+
     }
 }
