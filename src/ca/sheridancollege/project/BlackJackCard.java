@@ -3,35 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package ca.sheridancollege.project;
 
 /**
- * This class This class is used to models BlackJack card Objects. 
- * 
- * A BlackJack card has a value among: ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, 
+ * This class This class is used to models BlackJack card Objects.
+ * <p>
+ * A BlackJack card has a value among: ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN,
+ * EIGHT,
  * NINE, TEN, JACK, QUEEN, KING
- * and it has a suit among:  CLUB, SPADE, DIAMOND, HEART
+ * and it has a suit among: CLUB, SPADE, DIAMOND, HEART
  * All together there are 52 cards in a deck.
  *
  * @author Xianjun Wang July 2021
- * @modifier Chun Kiu So July 2021
  */
-public class BlackJackCard extends Card{
-    
+public class BlackJackCard extends Card {
+
     //BlackJackCard constructor
-    public BlackJackCard(Suit suit, Value value, boolean isUp) {
-        super(suit,value,isUp);
+    public BlackJackCard (Suit suit, Value value) {
+        super(suit, value);
     }
-     
+
     //Print BlackJack Card value and suit.
     @Override
-     public String toString(){
-         
-         if(isUp){
-            return value.getStringValue() + " of "  + getSuit() + " " + value.getNumValue();
-         }else{
-             return "Face down";
-         }
-     }
+    public String toString () {
+        return getValue() + " of " + getSuit();
+    }
 }

@@ -3,26 +3,23 @@ package ca.sheridancollege.project;
 /**
  * An enum for Card values
  *
- * @author William Ibarra, June 2021
- * @modifier Chun Kiu So July 2021
+ * @author Chun Kiu So July 2021
+ * @modifier William Ibarra, June 2021
  */
 public enum Value {
-    ACE(1, "Ace"), TWO(2, "Two"), THREE(3, "Three"), FOUR(4, "Four"), FIVE(5, "Five"), SIX(6, "Six"), SEVEN(7, "Seven"), EIGHT(8, "Eight"), NINE(9, "Nine"), TEN(10, "Ten"), JACK(10, "Jack"), QUEEN(10, "Queen"), KING(10,"King");
+    ACE(1), TWO(2), THREE(3), FOUR(4), FIVE(5), SIX(6), SEVEN(7), EIGHT(8), NINE(9), TEN(10), JACK(10), QUEEN(10), KING(10);
 
-    private final int numValue;
-    private final String stringValue;
+    private int numValue;
 
     //Constructor
-    Value(int numValue, String stringValue){
+    Value (int numValue) {
         this.numValue = numValue;
-        this.stringValue = stringValue;
+
     }
 
-    public int getNumValue(){
+    public int getNumValue () {
         return numValue;
     }
-    
-    public String getStringValue(){
-        return stringValue;
-    }
+
+
 }
