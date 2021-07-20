@@ -37,4 +37,21 @@ public class Deck extends GroupOfCards{
             cards.remove(i);
         }
     }
+    
+    //checks for the total count of the player's hand
+    //if there is an ACE in a player's hand, it can be either have a value of 1 or 11, depending on the total count
+    public int checkHandValue (GroupOfCards hands) {
+        int total = 0;
+        int[] array = new int[hands.getSize()];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = hands.cards.get(i).value.getNumValue();
+            total += array[i];
+        }
+        for(int i = 0; i < array.length; i++){
+            if(hands.cards.get(i).value.getNumValue() == 1 && total < 21){
+                total += 10;
+            }
+        }
+        return total;
+    }
 }

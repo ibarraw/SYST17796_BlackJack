@@ -37,7 +37,9 @@ public class PlayBlackJack {
         //Cards in dealerHand and playerHand
         System.out.println("\nCards in the dealer's hands:");
         dealerHand.printDeck();
+        System.out.println("Count: " + cardDeck.checkHandValue(dealerHand));
         System.out.println("\nCards in the player's hands:");
         playerHand.printDeck();
+        System.out.println("Count: " + cardDeck.checkHandValue(playerHand));
     }
 }
