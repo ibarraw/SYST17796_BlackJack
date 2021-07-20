@@ -10,6 +10,7 @@ package ca.sheridancollege.project;
  * This class is used to create Black Jack deck.
  *
  * @author Xianjun Wang July 2021
+ * @modifier Chun Kiu So July 2021
  */
 public class Deck extends GroupOfCards{
 
@@ -17,14 +18,15 @@ public class Deck extends GroupOfCards{
     public Deck() {
         for(Suit suit: Suit.values()){
             for(Value value: Value.values()){
-                BlackJackCard card = new BlackJackCard(suit, value, false);               
+                BlackJackCard card = new BlackJackCard(suit, value, true);               
                 cards.add(card);
             }
         }
         //Shuffle the deck
         shuffle();
     }
-  
+
+    
     //Deal cards to the dealer or the players. The number of cards dealed will be depend 
     //on the situaiton including starting the game, hit, stay.
     public void deal(int howMany, GroupOfCards hand){

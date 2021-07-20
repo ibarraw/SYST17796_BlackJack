@@ -15,6 +15,7 @@ import java.util.Collections;
  * @author dancye
  * @author Paul Bonenfant Jan 2020
  * @modifier Xianjun Wang July 2021
+ * @modifier Chun Kiu So July 2021
  */
 public class GroupOfCards {
     
@@ -46,9 +47,10 @@ public class GroupOfCards {
         int index = 0;
         for (Card c : cards) {
             index++;
-            System.out.println(index + "  "+c + " ");    
+            System.out.println(index + "  "+ c);    
         }      
     }
+
     
     /**
      * @return the size of the group of cards

@@ -15,6 +15,7 @@ package ca.sheridancollege.project;
  * All together there are 52 cards in a deck.
  *
  * @author Xianjun Wang July 2021
+ * @modifier Chun Kiu So July 2021
  */
 public class BlackJackCard extends Card{
     
@@ -28,7 +29,7 @@ public class BlackJackCard extends Card{
      public String toString(){
          
          if(isUp){
-            return getValue() + " of "  + getSuit();
+            return value.getStringValue() + " of "  + getSuit() + " " + value.getNumValue();
          }else{
              return "Face down";
          }
