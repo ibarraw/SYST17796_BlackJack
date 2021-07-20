@@ -12,7 +12,7 @@ package ca.sheridancollege.project;
  * as a modifier.
  *
  * @author dancye
- * @author William Ibarra
+ * @modifier William Ibarra July 2021
  * @modifier Xianjun Wang July 2021
  */
 public abstract class Card { //default modifier for child classes

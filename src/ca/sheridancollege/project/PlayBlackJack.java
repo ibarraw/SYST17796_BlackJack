@@ -2,7 +2,8 @@ package ca.sheridancollege.project;
 /**
  * Main for BlackJack game
  *
- * @author William Ibarra
+ * @author Xianjun Wang July 2021
+ * @modifier William Ibarra July 2021
  */
 public class PlayBlackJack {
     /**

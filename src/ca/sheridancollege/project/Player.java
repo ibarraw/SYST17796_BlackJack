@@ -11,7 +11,6 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
- * @author William Ibarra
  */
 public abstract class Player {
 
