@@ -19,10 +19,12 @@ public abstract class Card { //default modifier for child classes
 
     protected Suit suit;
     protected Value value;
+    protected boolean isUp;
 
-    public Card (Suit suit, Value value) {
+    public Card (Suit suit, Value value, boolean isUp) {
         this.suit = suit;
         this.value = value;
+        this.isUp = isUp;
     }
     
     public Suit getSuit () {

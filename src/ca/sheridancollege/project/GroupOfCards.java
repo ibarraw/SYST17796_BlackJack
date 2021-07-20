@@ -46,7 +46,7 @@ public class GroupOfCards {
         int index = 0;
         for (Card c : cards) {
             index++;
-            System.out.println(index + "  "+c);    
+            System.out.println(index + "  "+c + " ");    
         }      
     }
     

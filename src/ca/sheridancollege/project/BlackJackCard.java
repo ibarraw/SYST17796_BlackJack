@@ -19,13 +19,18 @@ package ca.sheridancollege.project;
 public class BlackJackCard extends Card{
     
     //BlackJackCard constructor
-    public BlackJackCard(Suit suit, Value value) {
-        super(suit,value);
+    public BlackJackCard(Suit suit, Value value, boolean isUp) {
+        super(suit,value,isUp);
     }
      
     //Print BlackJack Card value and suit.
     @Override
      public String toString(){
-         return getValue() + " of "  + getSuit();
+         
+         if(isUp){
+            return getValue() + " of "  + getSuit();
+         }else{
+             return "Face down";
+         }
      }
 }

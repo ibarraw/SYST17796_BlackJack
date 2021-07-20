@@ -15,10 +15,11 @@ public class Deck extends GroupOfCards{
 
     //Bulid a BlackJack Card deck
     public Deck() {
-        for(int i = 0; i<Suit.values().length; i++){
-            for (int x = 0; x<Value.values().length; x++){
-                cards.add(new BlackJackCard(Suit.values()[i], Value.values()[x]));
-            }    
+        for(Suit suit: Suit.values()){
+            for(Value value: Value.values()){
+                BlackJackCard card = new BlackJackCard(suit, value, false);               
+                cards.add(card);
+            }
         }
         //Shuffle the deck
         shuffle();
