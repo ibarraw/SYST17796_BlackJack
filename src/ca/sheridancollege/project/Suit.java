@@ -1,4 +1,4 @@
-package ca.sheridancollege.project.BlackJackCards;
+package ca.sheridancollege.project;
 
 /**
  * An enum for Card suits

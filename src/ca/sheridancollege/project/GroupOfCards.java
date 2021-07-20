@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
  */
-package ca.sheridancollege.project.GameBaseCode;
+package ca.sheridancollege.project;
 
 import java.util.ArrayList;
 import java.util.Collections;

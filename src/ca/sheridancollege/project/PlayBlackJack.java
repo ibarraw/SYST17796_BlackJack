@@ -5,9 +5,6 @@
  */
 package ca.sheridancollege.project;
 
-import ca.sheridancollege.project.BlackJackCards.Deck;
-import ca.sheridancollege.project.GameBaseCode.GroupOfCards;
-
 /**
  * This class is used for Players and Dealer to login and play BlackJack Card
  * game.

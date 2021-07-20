@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 
-package ca.sheridancollege.project.BlackJackCards;
-
-import ca.sheridancollege.project.GameBaseCode.Card;
+package ca.sheridancollege.project;
 
 /**
  * This class This class is used to models BlackJack card Objects. 

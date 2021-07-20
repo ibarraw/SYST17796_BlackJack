@@ -3,10 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
  */
-package ca.sheridancollege.project.GameBaseCode;
-
-import ca.sheridancollege.project.BlackJackCards.Value;
-import ca.sheridancollege.project.BlackJackCards.Suit;
+package ca.sheridancollege.project;
 
 /**
  * A class to be used as the base Card class for the project. Must be general

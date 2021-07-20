@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 
-package ca.sheridancollege.project.BlackJackCards;
-import ca.sheridancollege.project.GameBaseCode.GroupOfCards;
+package ca.sheridancollege.project;
 
 /**
  * This class is used to create Black Jack deck.
