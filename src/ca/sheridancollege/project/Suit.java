@@ -6,6 +6,5 @@ package ca.sheridancollege.project;
  * @author William Ibarra, June 2021
  */
 public enum Suit {
-    CLUB, SPADE, DIAMOND, HEART
-
+    CLUBS, SPADES, DIAMONDS, HEARTS
 }

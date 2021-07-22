@@ -24,6 +24,21 @@ public class Deck extends GroupOfCards {
         shuffle();
     }
 
+ * @modifier Chun Kiu So July 2021
+ * @modifier William Ibarra July 2021
+ */
+public class Deck extends GroupOfCards {
+
+    //Bulid a BlackJack Card deck
+    public Deck () {
+        for (int i = 0; i < Suit.values().length; i++) {
+            for (int x = 0; x < Value.values().length; x++) {
+                cards.add(new BlackJackCard(Suit.values()[i], Value.values()[x]));
+            }
+        }
+        //Shuffle the deck
+        shuffle();
+    }
 
 
     //Deal cards to the dealer or the players. The number of cards dealed will be depend 

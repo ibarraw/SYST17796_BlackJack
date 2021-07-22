@@ -8,8 +8,7 @@ package ca.sheridancollege.project;
 import java.util.ArrayList;
 
 /**
- * The class that models your game. You should create a more specific child of
- * this class and instantiate the methods
+ * The class that models your game. You should create a more specific child of this class and instantiate the methods
  * given.
  *
  * @author dancye
@@ -17,12 +16,11 @@ import java.util.ArrayList;
  */
 public abstract class Game {
 
-    private final String gameName; //the title of the game
-    //Not needed as it is only a 1 v 1 game?
-    private ArrayList<Player> players;// the players of the game. 
+    private final String name;//the title of the game
+    private ArrayList<Player> players;// the players of the game
 
-    public Game (String name) {
-        this.gameName = name;
+    public Game(String name) {
+        this.name = name;
         players = new ArrayList();
     }
 
@@ -54,11 +52,20 @@ public abstract class Game {
     public abstract void play (GroupOfCards dealer, GroupOfCards player, Deck deck);
 
     /**
-     * When the game is over, use this method to declare and display a winning
-     * player.
+     * @param players the players of this game
      */
+
+    /**
+     * Play the game. This might be one method or many method calls depending on your game.
+     */
+    public abstract void play();
+
+    /**
+     * When the game is over, use this method to declare and display a winning player.
+     */
+    public abstract void declareWinner();
+
+}//end class
     public abstract void declareWinner (GroupOfCards person);
 
 
-
-}//end class

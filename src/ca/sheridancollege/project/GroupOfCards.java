@@ -17,17 +17,16 @@ import java.util.Collections;
  * @author dancye
  * @author Paul Bonenfant Jan 2020
  * @modifier Xianjun Wang July 2021
+ * @modifier Chun Kiu So July 2021
  * @modifier William Ibarra July 2021
  */
 public class GroupOfCards {
 
     //The group of cards, stored in an ArrayList
     protected ArrayList<Card> cards;
-    protected String name;
 
     public GroupOfCards () {
         cards = new ArrayList<>();
-
     }
 
     /**
@@ -55,6 +54,7 @@ public class GroupOfCards {
         }
     }
 
+
     /**
      * @return the size of the group of cards
      */
@@ -77,4 +77,5 @@ public class GroupOfCards {
 //    public void setSize(int size) {
 //        this.size = size;
 //    }
-}
+
+}//end class
