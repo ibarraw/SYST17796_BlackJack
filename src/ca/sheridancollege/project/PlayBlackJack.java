@@ -42,6 +42,7 @@ public class PlayBlackJack {
         System.out.println("Dealer hand value: " + cardDeck.checkHandValue(dealerHand));
         System.out.println("Player hand value: " + cardDeck.checkHandValue(playerHand));
 
+        //Testing the game
         BlackJackGame blackjack = new BlackJackGame("Blackjack");
         blackjack.play(dealerHand, playerHand, cardDeck);
 

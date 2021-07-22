@@ -59,8 +59,6 @@ public class BlackJackGame extends Game {
 
     @Override
     public void declareWinner (GroupOfCards person) {
-
         System.out.println("\nThe " + person.getName() + " has won the game!");
-
     }
 }
